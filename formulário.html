@@ -8,8 +8,8 @@
 	<body>
 		<div id="form">
 			<form action="">
-				nome:<br><input type="text" name="nome" value="" size="35"><br>
-				sobrenome:<br><input type="text" name="sobrenome" value="" size="35"><br>
+				nome:<br><input type="text" name="nome" value="" size="35" pattern="[a-z\s]+$" required="yes"><br>
+				sobrenome:<br><input type="text" name="sobrenome" value="" size="35" pattern="[a-z\s]+$" required="yes"><br>
 				sexo:<br> Masculino<input type="radio" name="sexo" value="masculino"> Feminino<input type="radio" name="sexo" value="feminino"><br>
 				Qual o ano do seu nascimento?<br>
 				<input type="button" id="btnCarregar" onclick="ano()" value="Carregar combobox" />
